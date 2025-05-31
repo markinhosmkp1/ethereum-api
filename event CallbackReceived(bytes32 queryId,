@@ -1,12 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>rETH Balance</title>
+  <script src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js"></script>
+  <script src="rETHInteraction.js"></script>
+</head>
+<body>
+  <button onclick="main()">Verificar Saldo</button>
+  <p>Saldo de rETH do destinatário: <span id="balance">X</span> rETH</p>
+</body>
+</html>
+
 pragma solidity ^0.8.0;
 
 import "./contracts/solc-v0.8.x/provableAPI.sol";
 
 event CallbackReceived(bytes32 queryId, string result);
-
 function __callback(bytes32 _myid, string memory _result) public override {
     require(msg.sender == provable_cbAddress());
     currentQueryID = _myid;
     returnValue = _result;
     emit CallbackReceived(_myid, _result);
-}
+}const provider = new ethers.providers.Web3Provider(window.ethereum);
+const rETH = new ethers.Contract(rETHAddress, rETHABI, provider);live-server
+console.log(process.env.RPC_URL);
+RPC_URL=https://sepolia.infura.io/v3/SEU_PROJETO_ID
