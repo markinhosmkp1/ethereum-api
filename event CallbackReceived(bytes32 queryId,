@@ -1,0 +1,12 @@
+pragma solidity ^0.8.0;
+
+import "./contracts/solc-v0.8.x/provableAPI.sol";
+
+event CallbackReceived(bytes32 queryId, string result);
+
+function __callback(bytes32 _myid, string memory _result) public override {
+    require(msg.sender == provable_cbAddress());
+    currentQueryID = _myid;
+    returnValue = _result;
+    emit CallbackReceived(_myid, _result);
+}
