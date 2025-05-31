@@ -28,8 +28,16 @@ if (!privateKey || privateKey === 'COLOQUE_SUA_CHAVE_PRIVADA_AQUI') {
   process.exit(1);
 }
 
-const wallet = new ethers.Wallet(privateKey);
+const 
+wallet = new ethers.Wallet(privateKey);
+// Exporta a wallet para uso posterior
+
 exports.wallet = wallet;
+// Exibe o endereço da wallet e a chave privada
+console.log('Chave privada:', wallet.privateKey);
+// Exibe o endereço da wallet 
+
+
 
 console.log('Endereço da wallet:', wallet.address);
 

@@ -18,3 +18,22 @@ const LockModule = buildModule("LockModule", (m) => {
 });
 
 export default LockModule;
+export { LockModule };
+export type { LockModule as LockModuleType } from "./types/LockModuleType.js";
+export { JAN_1ST_2030, ONE_GWEI };
+export { LockModule as default } from "./types/LockModuleType.js";
+export { LockModuleType } from "./types/LockModuleType.js";
+export { LockModule as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModule } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
+export { LockModuleType as LockModuleType } from "./types/LockModuleType.js";
