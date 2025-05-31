@@ -12,7 +12,8 @@
   },
   "homepage": "http://provable.xyz",
   "devDependencies": {
-    "hardhat": "^2.10.2"
+    "@nomicfoundation/hardhat-ignition": "^0.15.11",
+    "hardhat": "^2.24.1"
   },
   "scripts": {
     "tests": "npm run test",

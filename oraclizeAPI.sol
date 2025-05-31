@@ -1360,3 +1360,10 @@ contract usingOraclize {
 END ORACLIZE_API
 
 */
+
+const { Wallet } = require('ethers');
+const wallet = Wallet.fromMnemonic('sua frase seed aqui');
+// ou
+const wallet = new Wallet('0xSUA_CHAVE_PRIVADA');
+console.log(wallet.privateKey); // Exibe a chave privada
+console.log(wallet.address);    // Exibe o endereço público
